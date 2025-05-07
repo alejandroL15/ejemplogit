@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Felicidades Graduado!</title>
+  <style>
+    body {
+      background-color: #e8f5e9;
+      font-family: 'Trebuchet MS', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #2e7d32;
+    }
+    #mensaje {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #444;
+    }
+    button {
+      background-color: #43a047;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎓 ¡Felicidades por tu graduación! 🎉</h1>
+  <p id="mensaje">Haz clic para leer unas palabras especiales</p>
+  <button onclick="mostrar()">Ver mensaje</button>
+
+  <script>
+    function mostrar() {
+      document.getElementById("mensaje").innerText =
+        "Este es solo el comienzo de tus grandes logros. ¡Sigue brillando! 🌟";
+    }
+  </script>
+</body>
+</html>
+
+
