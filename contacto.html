@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Contacto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f0f0f0;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .mensaje {
+      text-align: center;
+      margin-top: 20px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="form-contacto">
+    <h2>Contáctanos</h2>
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="email" placeholder="Tu email" required>
+    <textarea placeholder="Tu mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+    <div class="mensaje" id="mensaje"></div>
+  </form>
+
+  <script>
+    const form = document.getElementById('form-contacto');
+    const mensaje = document.getElementById('mensaje');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      mensaje.textContent = "¡Mensaje enviado con éxito!";
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
