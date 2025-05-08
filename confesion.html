@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Algo que quiero decirte...</title>
+  <style>
+    body {
+      background: #fce4ec;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding: 60px;
+    }
+    h1 {
+      color: #c2185b;
+    }
+    #mensaje {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #444;
+    }
+    button {
+      padding: 10px 25px;
+      background-color: #c2185b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>😳 Tengo algo que decirte...</h1>
+  <p id="mensaje">Haz clic si estás listo para saberlo</p>
+  <button onclick="confesar()">Confesar</button>
+
+  <script>
+    function confesar() {
+      document.getElementById("mensaje").innerText =
+        "Me gustas... mucho. Y quería que lo supieras ❤️";
+    }
+  </script>
+</body>
+</html>
+
